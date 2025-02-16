@@ -20,7 +20,7 @@ st.title("Diabetes")
 # Input fields for each parameter
 Glucose = st.number_input("Glucose", min_value=0,max_value=200, value=0)
 BloodPressure = st.number_input("BloodPressure", min_value=0,max_value=122, value=0)
-Insulin = st.number_input("Insulin ", min_value=0.0, max_value=846, value=0 )
+Insulin = st.number_input("Insulin ", min_value=0, max_value=846, value=0 )
 BMI= st.number_input("BMI", min_value=0, max_value=67, value=0.1)
 DiabetesPedigreeFunction= st.number_input("DiabetesPedigreeFunction", min_value=0, max_value=2, value=0.1)
 Age = st.number_input("Age", min_value=21, max_value=81, value=21)
