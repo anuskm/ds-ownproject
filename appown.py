@@ -39,11 +39,9 @@ input_data = {'Glucose': Glucose,
 # When the user clicks the "Predict" button
 if st.button("Predict"):
     with st.spinner('Making prediction...'):
-        pred= predict_Outcome(input_data)
+        pred, prob = predict_diabetes(input_data)
 
         if pred == 1:
-            # Survived
-            st.success(f"Prediction: Outcome with probability {prob:.2f}")
+            st.error(f"Prediction: Diabetes with probability {prob:.2f}")
         else:
-            # Not survived
-            st.error(f"Prediction: Did not Outcome with probability {prob:.2f}")
+            st.success(f"Prediction: No Diabetes with probability {prob:.2f}")
