@@ -39,7 +39,7 @@ input_data = {'Glucose': Glucose,
 # When the user clicks the "Predict" button
 if st.button("Predict"):
     with st.spinner('Making prediction...'):
-        pred, prob = predict_Outcome(input_data)
+        pred= predict_Outcome(input_data)
 
         if pred == 1:
             # Survived
